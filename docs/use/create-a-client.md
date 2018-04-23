@@ -1,4 +1,4 @@
-# Create a client
+# Create a Client
 
 To create a new client, you need to specify the µAnalytics host as a _string_.
 
