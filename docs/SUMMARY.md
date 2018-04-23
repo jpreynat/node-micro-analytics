@@ -1,3 +1,3 @@
 # Table of Contents
 
-* [Introduction]('./README.md')
+* [Introduction](./README.md)
