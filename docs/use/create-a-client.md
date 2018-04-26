@@ -32,6 +32,20 @@ var opts = {
 var analytics = new Analytics(HOST, opts);
 ```
 
+or
+
+```javascript
+import Analytics from 'micro-analytics';
+
+const HOST = 'http://localhost:7070';
+const opts = {
+  username: 'johan',
+  password: 'myPass'
+};
+
+const analytics = new Analytics(HOST, opts);
+```
+
 By default, the client will use a cache key renewed each hour. You can set the cache interval using the `cacheExpire` key of the optional second argument. The value is the interval in seconds.
 
 ```javascript
