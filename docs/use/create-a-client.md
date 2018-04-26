@@ -9,6 +9,15 @@ var HOST = 'http://localhost:7070';
 var analytics = new Analytics(HOST);
 ```
 
+or
+
+```javascript
+import Analytics from 'micro-analytics';
+
+const HOST = 'http://localhost:7070';
+const analytics = new Analytics(HOST);
+```
+
 You can specify your credentials for µAnalytics basic authentication in an optional object passed as a second argument :
 
 ```javascript
@@ -35,4 +44,3 @@ var opts = {
 
 var analytics = new Analytics(HOST, opts);
 ```
-
