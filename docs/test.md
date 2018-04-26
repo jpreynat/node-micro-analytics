@@ -10,7 +10,13 @@ To test the client, set the client host in the `/test/config.json` file :
 
 Then simply run the tests :
 
-```text
+```bash
 $ npm test
+```
+
+or
+
+```bash
+$ yarn test
 ```
 

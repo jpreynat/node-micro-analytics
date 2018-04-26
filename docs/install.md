@@ -10,5 +10,3 @@ or
 $ yarn add micro-analytics
 ```
 
-
-
