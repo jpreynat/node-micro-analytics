@@ -58,3 +58,4 @@ var opts = {
 
 var analytics = new Analytics(HOST, opts);
 ```
+

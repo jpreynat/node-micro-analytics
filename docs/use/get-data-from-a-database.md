@@ -1,6 +1,6 @@
 # Get data from a database
 
-All requests for data can be passed a parameters object to query over a time range :
+All requests for data can be passed a parameters object to query over a time range:
 
 ```javascript
 var params = {
