@@ -9,6 +9,15 @@ var params = {
 };
 ```
 
+or
+
+```javascript
+const params = [
+    start: new Date(2015, 0, 1),
+    end: new Date(2015, 2, 1)
+};
+```
+
 ## Get complete analytics
 
 ```javascript
