@@ -16,3 +16,18 @@ bulk.push('MYDB', data);
 bulk.push('MYDB', data);
 ```
 
+or
+
+```javascript
+const bulk = new Analytics.BulkInsert(analytics, {
+    // Flush after N elements
+    flushAt: 100,
+
+    // Max duration to wait (in ms)
+    flushAfter: 10000
+});
+
+bulk.push('MYDB', data);
+...
+bulk.push('MYDB', data);
+```
