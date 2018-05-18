@@ -59,3 +59,16 @@ var opts = {
 var analytics = new Analytics(HOST, opts);
 ```
 
+or
+
+```javascript
+const Analytics = require('micro-analytics');
+
+const HOST = 'http://localhost:7070';
+const opts = {
+  cacheExpire: 86400 // One day
+};
+
+const analytics = new Analytics(HOST, opts);
+```
+
