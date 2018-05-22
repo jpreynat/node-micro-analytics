@@ -19,6 +19,24 @@ analytics.push(DBNAME, data)
 .then(function() { ... });
 ```
 
+or
+
+```javascript
+const data = {
+    "time": new Date(), // optional
+    "ip": "127.0.0.1",
+    "event": "download",
+    "path": "/somewhere",
+    "headers": {
+        "referer": "http://gitbook.com",
+        "user-agent": "...",
+        ...
+    }
+};
+
+await analytics.push(DBNAME, data);
+```
+
 ## Bulk insert
 
 If you need to push a list of existing analytics, use this method:
