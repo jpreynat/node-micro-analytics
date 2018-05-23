@@ -10,13 +10,17 @@ To test the client, set the client host in the `/test/config.json` file :
 
 Then simply run the tests :
 
+{% tabs %}
+{% tab title="node" %}
 ```bash
 $ npm test
 ```
+{% endtab %}
 
-or
-
+{% tab title="yarn" %}
 ```bash
 $ yarn test
 ```
+{% endtab %}
+{% endtabs %}
 

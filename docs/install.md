@@ -1,18 +1,12 @@
 # Install
 
-{% tabs %}
-{% tab title="npm" %}
-```bash
+```text
 $ npm install micro-analytics
 ```
-{% endtab %}
 
-{% tab title="yarn" %}
-```bash
+or
+
+```text
 $ yarn add micro-analytics
 ```
-{% endtab %}
-{% endtabs %}
-
-
 
