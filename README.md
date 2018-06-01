@@ -2,8 +2,6 @@
 
 A small promise-based node client library for the [µAnalytics](https://github.com/GitbookIO/analytics) service.
 
-![](.gitbook/assets/schema.png)
-
 ## Install
 
 ```text
