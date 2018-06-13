@@ -2,21 +2,25 @@
 
 To create a new client, you need to specify the µAnalytics host as a _string_.
 
-```javascript
-var Analytics = require('micro-analytics');
-
-var HOST = 'http://localhost:7070';
-var analytics = new Analytics(HOST);
-```
-
-or
-
+{% tabs %}
+{% tab title="ES6" %}
 ```javascript
 import Analytics from 'micro-analytics';
 
 const HOST = 'http://localhost:7070';
 const analytics = new Analytics(HOST);
 ```
+{% endtab %}
+
+{% tab title="ES5" %}
+```javascript
+var Analytics = require('micro-analytics');
+
+var HOST = 'http://localhost:7070';
+var analytics = new Analytics(HOST);
+```
+{% endtab %}
+{% endtabs %}
 
 You can specify your credentials for µAnalytics basic authentication in an optional object passed as a second argument :
 
@@ -71,4 +75,3 @@ const opts = {
 
 const analytics = new Analytics(HOST, opts);
 ```
-
