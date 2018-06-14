@@ -56,19 +56,8 @@ var analytics = new Analytics(HOST, opts);
 
 By default, the client will use a cache key renewed each hour. You can set the cache interval using the `cacheExpire` key of the optional second argument. The value is the interval in seconds.
 
-```javascript
-var Analytics = require('micro-analytics');
-
-var HOST = 'http://localhost:7070';
-var opts = {
-  cacheExpire: 86400 // One day
-};
-
-var analytics = new Analytics(HOST, opts);
-```
-
-or
-
+{% tabs %}
+{% tab title="ES6" %}
 ```javascript
 const Analytics = require('micro-analytics');
 
@@ -79,3 +68,18 @@ const opts = {
 
 const analytics = new Analytics(HOST, opts);
 ```
+{% endtab %}
+
+{% tab title="ES5" %}
+```javascript
+var Analytics = require('micro-analytics');
+
+var HOST = 'http://localhost:7070';
+var opts = {
+  cacheExpire: 86400 // One day
+};
+
+var analytics = new Analytics(HOST, opts);
+```
+{% endtab %}
+{% endtabs %}
