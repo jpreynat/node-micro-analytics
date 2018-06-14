@@ -24,20 +24,8 @@ var analytics = new Analytics(HOST);
 
 You can specify your credentials for µAnalytics basic authentication in an optional object passed as a second argument :
 
-```javascript
-var Analytics = require('micro-analytics');
-
-var HOST = 'http://localhost:7070';
-var opts = {
-  username: 'johan',
-  password: 'myPass'
-};
-
-var analytics = new Analytics(HOST, opts);
-```
-
-or
-
+{% tabs %}
+{% tab title="ES6" %}
 ```javascript
 import Analytics from 'micro-analytics';
 
@@ -49,6 +37,22 @@ const opts = {
 
 const analytics = new Analytics(HOST, opts);
 ```
+{% endtab %}
+
+{% tab title="ES5" %}
+```javascript
+var Analytics = require('micro-analytics');
+
+var HOST = 'http://localhost:7070';
+var opts = {
+  username: 'johan',
+  password: 'myPass'
+};
+
+var analytics = new Analytics(HOST, opts);
+```
+{% endtab %}
+{% endtabs %}
 
 By default, the client will use a cache key renewed each hour. You can set the cache interval using the `cacheExpire` key of the optional second argument. The value is the interval in seconds.
 
