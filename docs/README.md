@@ -1,6 +1,6 @@
 ---
 description: A small promise-based node client library for the µAnalytics service
-Afsdmlxcnv
+Afsdmlxcnvs
 ---
 
 # Introduction
