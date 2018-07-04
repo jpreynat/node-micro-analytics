@@ -1,5 +1,6 @@
 ---
 description: A small promise-based node client library for the µAnalytics service
+Afsdmlxcnv
 ---
 
 # Introduction
@@ -9,4 +10,3 @@ A small promise-based node client library for the [µAnalytics](https://github.c
 Here is an illustration of µAnalytics internal design:
 
 ![Internal design](.gitbook/assets/schema.png)
-
