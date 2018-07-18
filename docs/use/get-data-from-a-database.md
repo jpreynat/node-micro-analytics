@@ -2,21 +2,25 @@
 
 All requests for data can be passed a parameters object to query over a time range:
 
-```javascript
-var params = {
-    start: new Date(2015, 0, 1),
-    end: new Date(2015, 2, 1)
-};
-```
-
-or
-
+{% tabs %}
+{% tab title="ES6" %}
 ```javascript
 const params = [
     start: new Date(2015, 0, 1),
     end: new Date(2015, 2, 1)
 };
 ```
+{% endtab %}
+
+{% tab title="ES5" %}
+```javascript
+var params = {
+    start: new Date(2015, 0, 1),
+    end: new Date(2015, 2, 1)
+};
+```
+{% endtab %}
+{% endtabs %}
 
 ## Get complete analytics
 
