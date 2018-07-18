@@ -24,6 +24,20 @@ var params = {
 
 ## Get complete analytics
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+// Full query
+const result = await analytics.list(DBNAME);
+// result.list is an array containing the whole DB
+
+// Example with optional time range
+// The same applies for all data requests
+const result = await analytics.list(DBNAME, params);
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 // Full query
 analytics.list(DBNAME)
@@ -37,6 +51,8 @@ analytics.list(DBNAME)
 analytics.list(DBNAME, params)
 .then(function(result) { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `result` can be found [here](https://github.com/GitbookIO/micro-analytics#get-website).
 
@@ -112,4 +128,3 @@ analytics.overTime(DBNAME, params)
 ```
 
 A full description for `timeSerie` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitetime).
-
