@@ -58,6 +58,15 @@ A full description for `result` can be found [here](https://github.com/GitbookIO
 
 ## Get the count of analytics
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+const result = await analytics.count(DBNAME);
+// result looks like { total: 300, unique: 150 }
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 analytics.count(DBNAME)
 .then(function(result) {
@@ -65,6 +74,8 @@ analytics.count(DBNAME)
     ...
 });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `result` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitecount).
 
@@ -128,3 +139,4 @@ analytics.overTime(DBNAME, params)
 ```
 
 A full description for `timeSerie` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitetime).
+
