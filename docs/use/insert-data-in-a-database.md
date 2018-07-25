@@ -2,6 +2,24 @@
 
 ## Simple insert
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+await analytics.push(DBNAME, {
+    "time": new Date(), // optional
+    "ip": "127.0.0.1",
+    "event": "download",
+    "path": "/somewhere",
+    "headers": {
+        "referer": "http://gitbook.com",
+        "user-agent": "...",
+        ...
+    }
+});
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 var data = {
     "time": new Date(), // optional
@@ -18,6 +36,8 @@ var data = {
 analytics.push(DBNAME, data)
 .then(function() { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Bulk insert
 
