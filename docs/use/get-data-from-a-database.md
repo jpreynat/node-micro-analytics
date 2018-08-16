@@ -81,6 +81,15 @@ A full description for `result` can be found [here](https://github.com/GitbookIO
 
 ## Get aggregated analytics by countries
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+const countries = await analytics.byCountries(DBNAME);
+// countries.list is an array of aggregated analytics
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 analytics.byCountries(DBNAME)
 .then(function(countries) {
@@ -88,6 +97,8 @@ analytics.byCountries(DBNAME)
     ...
 });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `countries` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitecountries).
 
