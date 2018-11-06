@@ -104,10 +104,20 @@ A full description for `countries` can be found [here](https://github.com/Gitboo
 
 ## Get aggregated analytics by platforms
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+const platforms = await analytics.byPlatforms(DBNAME);
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 analytics.byPlatforms(DBNAME)
 .then(function(platforms) { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `platforms` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websiteplatforms).
 
