@@ -41,7 +41,7 @@ analytics.push(DBNAME, data)
 
 ## Bulk insert
 
-If you need to push a list of existing analytics, use this method:
+If you need to push a list of existing analytics, use the following method:
 
 ```javascript
 var data = {
