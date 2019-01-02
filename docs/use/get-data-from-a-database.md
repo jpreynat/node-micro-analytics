@@ -123,10 +123,20 @@ A full description for `platforms` can be found [here](https://github.com/Gitboo
 
 ## Get aggregated analytics by domains
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+const domains = await analytics.byDomains(DBNAME);
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 analytics.byDomains(DBNAME)
 .then(function(domains) { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `domains` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitedomains).
 
