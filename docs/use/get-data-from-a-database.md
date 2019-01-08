@@ -142,10 +142,20 @@ A full description for `domains` can be found [here](https://github.com/GitbookI
 
 ## Get aggregated analytics by events
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+const events = await analytics.byEvents(DBNAME);
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 analytics.byEvents(DBNAME)
 .then(function(events) { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `events` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websiteevents).
 
@@ -153,6 +163,22 @@ A full description for `events` can be found [here](https://github.com/GitbookIO
 
 With `overTime()`, the parameter object can take an `interval` key to specify the time serie interval in seconds. By default, the service sets the interval to `86400` \(which is equal to one day\).
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+// Full query
+const timeSerie = await analytics.overTime(DBNAME);
+
+// With parameters
+const timeSerie = await analytics.overTime(DBNAME, {
+    start: new Date(2015, 0, 1),
+    end: new Date(2015, 2, 1),
+    interval: 2592000 // one month
+});
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 // Full query
 analytics.overTime(DBNAME)
@@ -168,6 +194,8 @@ var params = {
 analytics.overTime(DBNAME, params)
 .then(function(timeSerie) { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 A full description for `timeSerie` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitetime).
 
