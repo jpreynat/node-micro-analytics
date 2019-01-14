@@ -43,6 +43,35 @@ analytics.push(DBNAME, data)
 
 If you need to push a list of existing analytics, use this method:
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+await analytics.bulk(DBNAME, {
+    "list": [
+        {
+            "time": 1450098642,
+            "ip": "127.0.0.1",
+            "event": "download",
+            "path": "/somewhere",
+            "platform": "Apple Mac",
+            "refererDomain": "www.gitbook.com",
+            "countryCode": "fr"
+        },
+        {
+            "time": 0,
+            "ip": "127.0.0.1",
+            "event": "login",
+            "path": "/someplace",
+            "platform": "Linux",
+            "refererDomain": "www.gitbook.com",
+            "countryCode": "us"
+        }
+    ]
+});
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 var data = {
     "list": [
@@ -70,6 +99,8 @@ var data = {
 analytics.bulk(DBNAME, data)
 .then(function() { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
 The passed `time` value must be a Unix timestamp in sec. The `countryCode` will be reprocessed by the service based on the `ip`.
 
