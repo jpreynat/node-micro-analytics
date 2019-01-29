@@ -19,7 +19,7 @@ $ npm test
 
 {% tab title="yarn" %}
 ```bash
-$ yarn test
+$ yarn run test
 ```
 {% endtab %}
 {% endtabs %}
