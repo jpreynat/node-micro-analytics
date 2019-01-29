@@ -108,6 +108,37 @@ The passed `time` value must be a Unix timestamp in sec. The `countryCode` will 
 
 If you need to push analytics for different websites, you can use:
 
+{% tabs %}
+{% tab title="ES6" %}
+```javascript
+await analytics.bulkMulti(DBNAME, {
+    "list": [
+        {
+            "website": "website-1.com",
+            "time": 1450098642,
+            "ip": "127.0.0.1",
+            "event": "download",
+            "path": "/somewhere",
+            "platform": "Apple Mac",
+            "refererDomain": "www.gitbook.com",
+            "countryCode": "fr"
+        },
+        {
+            "website": "website-2.com",
+            "time": 0,
+            "ip": "127.0.0.1",
+            "event": "login",
+            "path": "/someplace",
+            "platform": "Linux",
+            "refererDomain": "www.gitbook.com",
+            "countryCode": "us"
+        }
+    ]
+});
+```
+{% endtab %}
+
+{% tab title="ES5" %}
 ```javascript
 var data = {
     "list": [
@@ -137,4 +168,6 @@ var data = {
 analytics.bulkMulti(DBNAME, data)
 .then(function() { ... });
 ```
+{% endtab %}
+{% endtabs %}
 
