@@ -102,7 +102,7 @@ analytics.bulk(DBNAME, data)
 {% endtab %}
 {% endtabs %}
 
-The passed `time` value must be a Unix timestamp in sec. The `countryCode` will be reprocessed by the service based on the `ip`.
+The passed `time` value must be a Unix timestamp in sec. The `countryCode` will also be processed by the service based on the `ip`.
 
 ## Multi-website bulk insert
 
