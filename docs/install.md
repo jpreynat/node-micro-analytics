@@ -1,6 +1,6 @@
 # Install
 
-Simply install the `micro-analytics` node module as a dependency of your project.
+Simply add the `micro-analytics` node module as a dependency of your project.
 
 {% tabs %}
 {% tab title="node" %}
