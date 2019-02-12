@@ -1,6 +1,6 @@
 # Auto Bulk Insert
 
-This module provides a small utility to easily bulk insert from multiple calls:
+This module provides a small utility to easily bulk insert into the DB:
 
 {% tabs %}
 {% tab title="ES6" %}
