@@ -1,4 +1,4 @@
 # Table of contents
 
-* [micro-analytics](README.md)
+* [Micro Analytics](README.md)
 
