@@ -2,19 +2,17 @@
 
 A small promise-based node client library for the [µAnalytics](https://github.com/GitbookIO/micro-analytics) service.
 
-
 ## Install
 
-```
+```text
 $ npm install micro-analytics
 ```
-
 
 ## Test
 
 To test the client, set the client host in the `/test/config.json` file :
 
-```JavaScript
+```javascript
 {
     "HOST": "http://localhost:7070"
 }
@@ -22,18 +20,17 @@ To test the client, set the client host in the `/test/config.json` file :
 
 Then simply run the tests :
 
-```
+```text
 $ npm test
 ```
-
 
 ## Use
 
 ### Create a client
 
-To create a new client, you need to specify the µAnalytics host as a *string*.
+To create a new client, you need to specify the µAnalytics host as a _string_.
 
-```JavaScript
+```javascript
 var Analytics = require('micro-analytics');
 
 var HOST = 'http://localhost:7070';
@@ -42,7 +39,7 @@ var analytics = new Analytics(HOST);
 
 You can specify your credentials for µAnalytics basic authentication in an optional object passed as a second argument :
 
-```JavaScript
+```javascript
 var Analytics = require('micro-analytics');
 
 var HOST = 'http://localhost:7070';
@@ -56,7 +53,7 @@ var analytics = new Analytics(HOST, opts);
 
 By default, the client will use a cache key renewed each hour. You can set the cache interval using the `cacheExpire` key of the optional second argument. The value is the interval in seconds.
 
-```JavaScript
+```javascript
 var Analytics = require('micro-analytics');
 
 var HOST = 'http://localhost:7070';
@@ -71,7 +68,7 @@ var analytics = new Analytics(HOST, opts);
 
 All requests for data can be passed a parameters object to query over a time range :
 
-```JavaScript
+```javascript
 var params = {
     start: new Date(2015, 0, 1),
     end: new Date(2015, 2, 1)
@@ -80,7 +77,7 @@ var params = {
 
 #### Get complete analytics
 
-```JavaScript
+```javascript
 // Full query
 analytics.list(DBNAME)
 .then(function(result) {
@@ -98,7 +95,7 @@ A full description for `result` can be found [here](https://github.com/GitbookIO
 
 #### Get the count of analytics
 
-```JavaScript
+```javascript
 analytics.count(DBNAME)
 .then(function(result) {
     // result looks like { total: 300, unique: 150 }
@@ -110,7 +107,7 @@ A full description for `result` can be found [here](https://github.com/GitbookIO
 
 #### Get aggregated analytics by countries
 
-```JavaScript
+```javascript
 analytics.byCountries(DBNAME)
 .then(function(countries) {
     // result.list is an array of aggregated analytics
@@ -122,7 +119,7 @@ A full description for `countries` can be found [here](https://github.com/Gitboo
 
 #### Get aggregated analytics by platforms
 
-```JavaScript
+```javascript
 analytics.byPlatforms(DBNAME)
 .then(function(platforms) { ... });
 ```
@@ -131,7 +128,7 @@ A full description for `platforms` can be found [here](https://github.com/Gitboo
 
 #### Get aggregated analytics by domains
 
-```JavaScript
+```javascript
 analytics.byDomains(DBNAME)
 .then(function(domains) { ... });
 ```
@@ -140,7 +137,7 @@ A full description for `domains` can be found [here](https://github.com/GitbookI
 
 #### Get aggregated analytics by events
 
-```JavaScript
+```javascript
 analytics.byEvents(DBNAME)
 .then(function(events) { ... });
 ```
@@ -149,9 +146,9 @@ A full description for `events` can be found [here](https://github.com/GitbookIO
 
 #### Get aggregated analytics as a time serie
 
-With `overTime()`, the parameter object can take an `interval` key to specify the time serie interval in seconds. By default, the service sets the interval to `86400` (which is equal to one day).
+With `overTime()`, the parameter object can take an `interval` key to specify the time serie interval in seconds. By default, the service sets the interval to `86400` \(which is equal to one day\).
 
-```JavaScript
+```javascript
 // Full query
 analytics.overTime(DBNAME)
 .then(function(timeSerie) { ... });
@@ -169,12 +166,11 @@ analytics.overTime(DBNAME, params)
 
 A full description for `timeSerie` can be found [here](https://github.com/GitbookIO/micro-analytics#get-websitetime).
 
-
 ### Insert data in a database
 
 #### Simple insert
 
-```JavaScript
+```javascript
 var data = {
     "time": new Date(), // optional
     "ip": "127.0.0.1",
@@ -195,7 +191,7 @@ analytics.push(DBNAME, data)
 
 If you need to push a list of existing analytics, use this method:
 
-```JavaScript
+```javascript
 var data = {
     "list": [
         {
@@ -223,14 +219,13 @@ analytics.bulk(DBNAME, data)
 .then(function() { ... });
 ```
 
-The passed `time` value must be a Unix timestamp in sec.
-The `countryCode` will be reprocessed by the service based on the `ip`.
+The passed `time` value must be a Unix timestamp in sec. The `countryCode` will be reprocessed by the service based on the `ip`.
 
 #### Multi-website bulk insert
 
 If you need to push analytics for different websites, you can use:
 
-```JavaScript
+```javascript
 var data = {
     "list": [
         {
@@ -262,7 +257,8 @@ analytics.bulkMulti(DBNAME, data)
 
 ### Delete a database
 
-```JavaScript
+```javascript
 analytics.delete(DBNAME)
 .then(function() { ... });
 ```
+
