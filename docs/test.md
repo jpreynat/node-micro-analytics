@@ -1,3 +1,7 @@
+---
+description: Test the client with a real instance
+---
+
 # Test
 
 To test the client, set the host corresponding to your service instance in the `/test/config.json` file :

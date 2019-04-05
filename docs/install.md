@@ -1,3 +1,7 @@
+---
+description: Install the micro-analytics package
+---
+
 # Install
 
 Simply add the `micro-analytics` node module as a dependency of your project.

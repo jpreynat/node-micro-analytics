@@ -59,7 +59,7 @@ By default, the client will use a cache key renewed each hour. You can set the c
 {% tabs %}
 {% tab title="ES6" %}
 ```javascript
-const Analytics = require('micro-analytics');
+import Analytics from 'micro-analytics';
 
 const HOST = 'http://localhost:7070';
 const opts = {
