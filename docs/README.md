@@ -1,5 +1,5 @@
 ---
-description: A small promise-based node client library for the µAnalytics service
+description: A minimal promise-based node client library for the µAnalytics service
 ---
 
 # Introduction
