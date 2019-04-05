@@ -11,7 +11,7 @@ To test the client, set the host corresponding to your service instance in the `
 Then, simply run the tests:
 
 {% tabs %}
-{% tab title="node" %}
+{% tab title="npm" %}
 ```bash
 $ npm test
 ```
