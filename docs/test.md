@@ -1,5 +1,5 @@
 ---
-description: Test the client with a real instance
+description: Test the client
 ---
 
 # Test
