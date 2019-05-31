@@ -4,7 +4,7 @@ description: Test the client
 
 # Test
 
-To test the client, set the host corresponding to your service instance in the `/test/config.json` file :
+To test the client, set the host corresponding to your service instance in the `/test/config.json` file:
 
 ```javascript
 {
