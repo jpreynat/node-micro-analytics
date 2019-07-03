@@ -4,9 +4,9 @@ description: A minimal promise-based node client library for the µAnalytics ser
 
 # Introduction
 
-A small promise-based node client for the awesome [µAnalytics](https://github.com/GitbookIO/micro-analytics) service.
+A small promise-based node client for the awesome [µAnalytics](https://github.com/GitbookIO/micro-analytics) service
 
 Here is an illustration of µAnalytics internal design:
 
-![Internal design](.gitbook/assets/schema-1%20%281%29.png)
+![Internal design](.gitbook/assets/schema-1-1.png)
 
