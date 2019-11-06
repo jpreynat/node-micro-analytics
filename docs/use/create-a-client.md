@@ -1,6 +1,6 @@
 # Create a Client
 
-To create a new client, simply pass the service host as a _string_ to the µAnalytics constructor.
+To create a new client, simply pass the service hostname as a _string_ to the µAnalytics constructor.
 
 {% tabs %}
 {% tab title="ES6" %}
