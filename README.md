@@ -4,7 +4,7 @@
 
 A small promise-based node client library for the [µAnalytics](https://github.com/GitbookIO/analytics) service.
 
-![](.gitbook/assets/schema%20%281%29.png)
+![](.gitbook/assets/schema-1.png)
 
 ## Install
 
