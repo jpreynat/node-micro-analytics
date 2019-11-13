@@ -35,6 +35,7 @@ var Analytics = require('micro-analytics');
 
 var HOST = 'http://localhost:7070';
 var analytics = new Analytics(HOST);
+var test = await analytics.list('some-db');
 ```
 
 You can specify your credentials for µAnalytics basic authentication in an optional object passed as a second argument :
