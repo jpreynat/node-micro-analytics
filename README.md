@@ -10,7 +10,7 @@ $ npm install micro-analytics
 
 ## Test
 
-To test the client, set the client host in the `/test/config.json` file :
+To test the client, set the client host in the `/test/config.json` file:
 
 ```javascript
 {
