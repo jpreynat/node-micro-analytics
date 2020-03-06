@@ -1,5 +1,7 @@
 # Install
 
+`micro-analytics` can be installed using your favorite Node dependencies manager.
+
 {% tabs %}
 {% tab title="node" %}
 ```bash
