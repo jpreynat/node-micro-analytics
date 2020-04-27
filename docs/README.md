@@ -8,5 +8,5 @@ A small promise-based node client library for the [µAnalytics](https://github.c
 
 Here is an illustration of the internal design of µAnalytics:
 
-![Internal design](.gitbook/assets/schema.png)
+![Internal design](.gitbook/assets/schema2.png)
 
