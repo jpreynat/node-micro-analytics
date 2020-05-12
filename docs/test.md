@@ -10,7 +10,7 @@ To test the client, set the client host in the `/test/config.json` file:
 ```
 {% endcode %}
 
-Then simply run the tests:
+Then, simply run the tests:
 
 {% tabs %}
 {% tab title="node" %}
