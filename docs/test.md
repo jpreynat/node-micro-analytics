@@ -12,7 +12,7 @@ To test the client, launch a local install of µAnalytics and set the host URL c
 }
 ```
 
-Then, simply run the tests:
+Then simply run the tests:
 
 {% tabs %}
 {% tab title="npm" %}

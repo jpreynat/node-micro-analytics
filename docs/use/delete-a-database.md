@@ -1,5 +1,7 @@
 # Delete a database
 
+Deleting a whole database is as simple as:
+
 {% tabs %}
 {% tab title="ES6" %}
 ```javascript
