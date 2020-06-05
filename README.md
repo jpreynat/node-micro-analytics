@@ -24,9 +24,19 @@ To test the client, set the client host in the `/test/config.json` file :
 
 Then simply run the tests :
 
+{% tabs %}
+{% tab title="npm" %}
 ```text
 $ npm test
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```javascript
+$ yarn test
+```
+{% endtab %}
+{% endtabs %}
 
 ## Use
 
